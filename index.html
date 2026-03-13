@@ -905,7 +905,36 @@
     .btn-glow i {
       margin-right: 8px;
     }
+ /* ─── VOICE DEMO WAVES ─── */
+    .voice-waves {
+      display: none;
+      align-items: center;
+      gap: 3px;
+      margin-left: 15px;
+      height: 20px;
+    }
 
+    .voice-waves.active {
+      display: flex;
+    }
+
+    .voice-waves span {
+      width: 3px;
+      height: 100%;
+      background: var(--neon-cyan);
+      border-radius: 3px;
+      animation: wave 1s ease-in-out infinite;
+    }
+
+    .voice-waves span:nth-child(2) { animation-delay: 0.1s; }
+    .voice-waves span:nth-child(3) { animation-delay: 0.2s; }
+    .voice-waves span:nth-child(4) { animation-delay: 0.3s; }
+    .voice-waves span:nth-child(5) { animation-delay: 0.4s; }
+
+    @keyframes wave {
+      0%, 100% { height: 5px; }
+      50% { height: 20px; }
+    }
     ul {
       padding-left: 1.5em;
       list-style-type: none;
@@ -2309,6 +2338,9 @@
           <p>AI-powered voice agents for automated customer service, scheduling, and lead qualification. Handles natural
             conversation with ultra-low latency.</p>
           <div class="voice-demo">
+             <!-- Hidden audio element -->
+            <audio id="demo-audio" src="assets/projects/agent_call/ai agent call.mp3"></audio>
+
             <button class="btn-glow play-btn" onclick="toggleAudio(this)">
               <i class="fas fa-play"></i> Listen to Demo
             </button>
@@ -3874,6 +3906,37 @@
         console.error("Timezone detection failed", e);
       }
     }
+ function toggleAudio(button) {
+      const audio = document.getElementById('demo-audio');
+      const icon = button.querySelector('i');
+      const voiceWaves = button.parentElement.querySelector('.voice-waves');
+
+      if (audio.paused) {
+        audio.play();
+        icon.className = 'fas fa-pause';
+        button.innerHTML = '<i class="fas fa-pause"></i> Pause Demo';
+        if (voiceWaves) voiceWaves.classList.add('active');
+      } else {
+        audio.pause();
+        icon.className = 'fas fa-play';
+        button.innerHTML = '<i class="fas fa-play"></i> Listen to Demo';
+        if (voiceWaves) voiceWaves.classList.remove('active');
+      }
+
+      audio.onended = () => {
+        icon.className = 'fas fa-play';
+        button.innerHTML = '<i class="fas fa-play"></i> Listen to Demo';
+        if (voiceWaves) voiceWaves.classList.remove('active');
+      };
+    }
+
+    window.addEventListener('beforeunload', function () {
+      const audio = document.getElementById('demo-audio');
+      if (audio && !audio.paused) {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    });
 
     // ─── HOLOGRAPHIC DISK TOGGLE ───
     function toggleHoloDisk() {
