@@ -2178,27 +2178,33 @@
     <section class="hero-cinematic">
       <div class="grid-overlay"></div>
 
-      <!-- HUD Connecting Lines -->
+        <!-- HUD Content Framing (Aligned with 1300px container) -->
       <div
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; opacity: 0.1;">
-        <div
-          style="position: absolute; top: 100px; left: 50px; width: 1px; height: calc(100% - 200px); background: var(--neon-cyan);">
+        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; max-width: 1300px; height: 100%; pointer-events: none; z-index: 2;">
+        
+        <!-- Top Left Bracket -->
+        <div style="position: absolute; top: 120px; left: 2rem; width: 40px; height: 40px; border-top: 1px solid var(--neon-cyan); border-left: 1px solid var(--neon-cyan); opacity: 0.3;">
+          <div style="position: absolute; top: -3px; left: -3px; width: 6px; height: 6px; background: var(--neon-cyan); border-radius: 50%; box-shadow: 0 0 10px var(--neon-cyan);"></div>
         </div>
-        <div
-          style="position: absolute; top: 100px; right: 50px; width: 1px; height: calc(100% - 200px); background: var(--neon-cyan);">
+        
+        <!-- Top Right Bracket -->
+        <div style="position: absolute; top: 120px; right: 2rem; width: 40px; height: 40px; border-top: 1px solid var(--neon-cyan); border-right: 1px solid var(--neon-cyan); opacity: 0.3;">
+          <div style="position: absolute; top: -3px; right: -3px; width: 6px; height: 6px; background: var(--neon-cyan); border-radius: 50%; box-shadow: 0 0 10px var(--neon-cyan);"></div>
         </div>
-        <div
-          style="position: absolute; top: 100px; left: 50px; width: 200px; height: 1px; background: var(--neon-cyan);">
+
+        <!-- Bottom Left Bracket -->
+        <div style="position: absolute; bottom: 60px; left: 2rem; width: 40px; height: 40px; border-bottom: 1px solid var(--neon-cyan); border-left: 1px solid var(--neon-cyan); opacity: 0.3;">
+          <div style="position: absolute; bottom: -3px; left: -3px; width: 6px; height: 6px; background: var(--neon-cyan); border-radius: 50%; box-shadow: 0 0 10px var(--neon-cyan);"></div>
         </div>
-        <div
-          style="position: absolute; top: 100px; right: 50px; width: 200px; height: 1px; background: var(--neon-cyan);">
+
+        <!-- Bottom Right Bracket -->
+        <div style="position: absolute; bottom: 60px; right: 2rem; width: 40px; height: 40px; border-bottom: 1px solid var(--neon-cyan); border-right: 1px solid var(--neon-cyan); opacity: 0.3;">
+          <div style="position: absolute; bottom: -3px; right: -3px; width: 6px; height: 6px; background: var(--neon-cyan); border-radius: 50%; box-shadow: 0 0 10px var(--neon-cyan);"></div>
         </div>
-        <div
-          style="position: absolute; bottom: 100px; left: 50px; width: 200px; height: 1px; background: var(--neon-cyan);">
-        </div>
-        <div
-          style="position: absolute; bottom: 100px; right: 50px; width: 200px; height: 1px; background: var(--neon-cyan);">
-        </div>
+
+        <!-- Horizontal Connectors (Very subtle) -->
+        <div style="position: absolute; top: 120px; left: 60px; width: calc(100% - 120px); height: 1px; background: linear-gradient(90deg, transparent, rgba(0, 245, 255, 0.1), transparent); opacity: 0.5;"></div>
+        <div style="position: absolute; bottom: 60px; left: 60px; width: calc(100% - 120px); height: 1px; background: linear-gradient(90deg, transparent, rgba(0, 245, 255, 0.1), transparent); opacity: 0.5;"></div>
       </div>
 
       <!-- Holographic Profile Disk -->
