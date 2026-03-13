@@ -9,7 +9,6 @@
     content="Building high-performance cross-platform applications with native feel and global scalability.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  
   <style>
     :root {
       --neon-cyan: #00f5ff;
@@ -20,8 +19,10 @@
       --text-main: #e0f2f1;
       --muted: #88a0b0;
       --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      --space-bg: #050b1a; /* Deep space color */
-      --radius: 24px; /* Global rounded corners for cards */
+      --space-bg: #050b1a;
+      /* Deep space color */
+      --radius: 24px;
+      /* Global rounded corners for cards */
     }
 
     * {
@@ -265,7 +266,8 @@
       display: flex;
       flex-direction: column;
       height: 100%;
-      min-height: 600px; /* Base height for project cards */
+      min-height: 600px;
+      /* Base height for project cards */
     }
 
     /* FAQ cards don't need the 600px min-height */
@@ -276,7 +278,8 @@
 
     .card .card-corners::before,
     .card .card-corners::after {
-      display: none; /* Hidden to match rounded aesthetic */
+      display: none;
+      /* Hidden to match rounded aesthetic */
     }
 
     /* Sharp corners removed for modern rounded aesthetic */
@@ -2169,79 +2172,6 @@
         </div>
       </div>
 
-<<<<<<< Updated upstream
-          /* Underline animation */
-          .pro-name::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 1px;
-            background: #00f5ff;
-            transform: scaleX(0);
-            transform-origin: right;
-            transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
-          }
-
-          .pro-name:hover::after {
-            transform: scaleX(1);
-            transform-origin: left;
-          }
-
-          /* Letter containers */
-          .pro-name span {
-            position: relative;
-            display: inline-block;
-            transition: all 0.3s ease;
-            margin-right: -0.05em; /* Compensate for tight spacing */
-          }
-
-          /* Hover effects */
-          .pro-name:hover span {
-            color: #00f5ff;
-            transform: translateY(-2px);
-          }
-
-          /* Sequential animation */
-          .pro-name:hover span:nth-child(1) { transition-delay: 0.05s; }
-          .pro-name:hover span:nth-child(2) { transition-delay: 0.1s; }
-          .pro-name:hover span:nth-child(3) { transition-delay: 0.15s; }
-          .pro-name:hover span:nth-child(4) { transition-delay: 0.2s; }
-          .pro-name:hover span:nth-child(5) { transition-delay: 0.25s; }
-
-          /* Subtle glow */
-          .pro-name:hover {
-            text-shadow: 0 0 8px rgba(0, 245, 255, 0.3);
-          }
-        </style>
-
-        <h1 class="pro-name">
-          <span class="stat-number">K</span>
-          <span class="stat-number">u</span>
-          <span class="stat-number">n</span>
-          <span class="stat-number">a</span>
-          <span class="stat-number">l</span>
-        </h1> -->
-        <h1 class="tech-head">
-          
-                    <span style="font-size: 3.5rem;" data-text="Kunal">Kunal </span>
-
-        </h1>
-          <br>
-          <span style="font-size: 1.5rem;">Senior</span> <span class="ai-glow">Flutter & Android</span> Engineer
-        </h1>
-        <p class="tagline">
-          I build high-performance cross-platform applications that feel native, scale globally, 
-          and ship fast. With 6+ years of experience and 1M+ downloads across 50+ live apps, 
-          I specialize in creating polished user experiences with Flutter and native Android.
-        </p>
-
-        <div class="stats-grid">
-          <div class="stat-item">
-            <div class="stat-number">10+</div>
-            <div class="stat-label">Live Apps</div>
-=======
       <!-- Holographic Profile Disk -->
       <div class="holo-disk-overlay" id="holoDiskOverlay" onclick="closeHoloDisk(event)">
         <div class="holo-disk-container">
@@ -2280,7 +2210,6 @@
             <a href="#pricing" class="holo-cta" onclick="closeHoloDisk()">
               <span>◈ HIRE ME</span>
             </a>
->>>>>>> Stashed changes
           </div>
         </div>
       </div>
@@ -2296,15 +2225,6 @@
             <a href="#ai-automation" class="btn-glow">View My Work</a>
             <a href="#pricing" class="btn-glow secondary">Hire Me</a>
           </div>
-<<<<<<< Updated upstream
-          <div class="stat-item">
-            <div class="stat-number">4.8★</div>
-            <div class="stat-label">Avg Rating</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">6+</div>
-            <div class="stat-label">Years Exp</div>
-=======
 
           <div class="hero-stats-row">
             <div class="stat-item">
@@ -2323,7 +2243,6 @@
               <span class="stat-val">15+</span>
               <span class="stat-lab">Live Products</span>
             </div>
->>>>>>> Stashed changes
           </div>
         </div>
 
@@ -2401,9 +2320,7 @@
 
         <!-- Custom AI Solution -->
         <div class="card">
-          <img
-            src="assets/projects/custom_ai_mockup.png"
-            alt="Custom AI Solution" class="project-cover" loading="lazy">
+          <img src="assets/projects/custom_ai_mockup.png" alt="Custom AI Solution" class="project-cover" loading="lazy">
           <h3>Custom AI Solutions</h3>
           <div class="tech-tags">
             <span class="tech-tag">LLMs</span>
@@ -2411,15 +2328,15 @@
             <span class="tech-tag">Vector DB</span>
             <span class="tech-tag">LangChain</span>
           </div>
-          <p>Bespoke artificial intelligence models tailored to your business data. Includes complete RAG pipelines and custom knowledge retrieval systems.</p>
-          <a href="#contact-form" class="btn-glow" style="font-size: 0.8rem; padding: 0.5rem 1.5rem;">Discuss Project</a>
+          <p>Bespoke artificial intelligence models tailored to your business data. Includes complete RAG pipelines and
+            custom knowledge retrieval systems.</p>
+          <a href="#contact-form" class="btn-glow" style="font-size: 0.8rem; padding: 0.5rem 1.5rem;">Discuss
+            Project</a>
         </div>
 
         <!-- AI Automation -->
         <div class="card">
-          <img
-            src="assets/projects/ai_automation_mockup.png"
-            alt="AI Automation" class="project-cover" loading="lazy">
+          <img src="assets/projects/ai_automation_mockup.png" alt="AI Automation" class="project-cover" loading="lazy">
           <h3>AI Automation</h3>
           <div class="tech-tags">
             <span class="tech-tag">Make.com</span>
@@ -2427,8 +2344,10 @@
             <span class="tech-tag">Agentic AI</span>
             <span class="tech-tag">Webhooks</span>
           </div>
-          <p>End-to-end business process automation chaining multiple AI tools and APIs together to replace manual repetitive workflows.</p>
-          <a href="#contact-form" class="btn-glow" style="font-size: 0.8rem; padding: 0.5rem 1.5rem;">Discuss Project</a>
+          <p>End-to-end business process automation chaining multiple AI tools and APIs together to replace manual
+            repetitive workflows.</p>
+          <a href="#contact-form" class="btn-glow" style="font-size: 0.8rem; padding: 0.5rem 1.5rem;">Discuss
+            Project</a>
         </div>
       </div>
     </section>
@@ -2460,9 +2379,8 @@
 
         <!-- SEO Landing Page -->
         <div class="card">
-          <img
-            src="assets/projects/seo_mockup.png"
-            alt="SEO Optimized Landing Page" class="project-cover" loading="lazy">
+          <img src="assets/projects/seo_mockup.png" alt="SEO Optimized Landing Page" class="project-cover"
+            loading="lazy">
           <h3>Landing Page & SEO Optimization</h3>
           <div class="tech-tags">
             <span class="tech-tag">Next.js</span>
@@ -2470,15 +2388,16 @@
             <span class="tech-tag">Core Web Vitals</span>
             <span class="tech-tag">Analytics</span>
           </div>
-          <p>High-converting business landing pages engineered for maximum SEO performance, lightning-fast load times, and optimized conversion funnels.</p>
-          <a href="#contact-form" class="btn-glow" style="font-size: 0.8rem; padding: 0.5rem 1.5rem;">Discuss Project</a>
+          <p>High-converting business landing pages engineered for maximum SEO performance, lightning-fast load times,
+            and optimized conversion funnels.</p>
+          <a href="#contact-form" class="btn-glow" style="font-size: 0.8rem; padding: 0.5rem 1.5rem;">Discuss
+            Project</a>
         </div>
 
         <!-- Custom Webapps -->
         <div class="card">
-          <img
-            src="assets/projects/webapp_mockup.png"
-            alt="Custom Web Applications" class="project-cover" loading="lazy">
+          <img src="assets/projects/webapp_mockup.png" alt="Custom Web Applications" class="project-cover"
+            loading="lazy">
           <h3>Custom Web Applications</h3>
           <div class="tech-tags">
             <span class="tech-tag">React</span>
@@ -2486,8 +2405,10 @@
             <span class="tech-tag">MongoDB</span>
             <span class="tech-tag">GraphQL</span>
           </div>
-          <p>Scalable, complex web applications tailored specifically to solve your unique business challenges, built entirely from scratch.</p>
-          <a href="#contact-form" class="btn-glow" style="font-size: 0.8rem; padding: 0.5rem 1.5rem;">Discuss Project</a>
+          <p>Scalable, complex web applications tailored specifically to solve your unique business challenges, built
+            entirely from scratch.</p>
+          <a href="#contact-form" class="btn-glow" style="font-size: 0.8rem; padding: 0.5rem 1.5rem;">Discuss
+            Project</a>
         </div>
       </div>
     </section>
@@ -3152,296 +3073,6 @@
         </div>
       </div>
 
-<<<<<<< Updated upstream
-  <section id="projects">
-    <div class="section-title">
-      <span class="section-number">01.</span>
-      <h2>Featured Projects</h2>
-      <div class="section-divider"></div>
-    </div>
-    
-    <div class="stats">
-    
-
-      <!-- Zadd -->
-      <div class="card">
-        <div class="project-gallery">
-          <img src="assets/projects/zadd/screen1.webp" alt="zadd" class="project-cover" loading="lazy">
-          <div class="screenshots-container">
-            <div class="screenshots">
-              <picture>
-                <source srcset="assets/projects/zadd/screen1.webp" type="image/webp">
-                <source srcset="assets/projects/zadd/screen1.webp" type="image/jpeg">
-                <img src="assets/projects/zadd/screen1.webp" 
-                     alt="Zadd Screenshot 1" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-              <picture>
-                <source srcset="assets/projects/zadd/screen2.webp" type="image/webp">
-                <source srcset="assets/projects/zadd/screen2.webp" type="image/jpeg">
-                <img src="assets/projects/zadd/screen2.webp" 
-                     alt="Zadd Screenshot 2" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-              <picture>
-                <source srcset="assets/projects/zadd/screen3.webp" type="image/webp">
-                <source srcset="assets/projects/zadd/screen3.webp" type="image/jpeg">
-                <img src="assets/projects/zadd/screen3.webp" 
-                     alt="Zadd Screenshot 3" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-               <picture>
-                <source srcset="assets/projects/zadd/screen4.webp" type="image/webp">
-                <source srcset="assets/projects/zadd/screen4.webp" type="image/jpeg">
-                <img src="assets/projects/zadd/screen4.webp" 
-                     alt="Zadd Screenshot 4" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-              <picture>
-                <source srcset="assets/projects/zadd/screen5.webp" type="image/webp">
-                <source srcset="assets/projects/zadd/screen5.webp" type="image/jpeg">
-                <img src="assets/projects/zadd/screen5.webp" 
-                     alt="zadd 5" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-          
-            </div>
-          </div>
-           </div>
-        <h3>Zadd E-commerce</h3>
-        <div class="tech-tags">
-          <span class="tech-tag">Flutter</span>
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">Razorpay</span>
-          <span class="tech-tag">PWA</span>
-        </div>
-        <p>Full-featured e-commerce solution with Progressive Web App support, Razorpay integration, and inventory management.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.app.zadd" target="_blank">View on Play Store →</a>
-      </div>
-<!-- LAP Autocare -->
-      <div class="card">
-        <div class="project-gallery">
-          <img src="assets/projects/autoCare/cover.png" alt="LAP Autocare" class="project-cover" loading="lazy">
-          <div class="screenshots-container">
-            <div class="screenshots">
-              <picture>
-                <source srcset="assets/projects/autoCare/screen1.webp" type="image/webp">
-                <source srcset="assets/projects/autoCare/screen1.webp" type="image/jpeg">
-                <img src="assets/projects/autoCare/screen1.webp" 
-                     alt="LAP Autocare Screenshot 1" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-              <picture>
-                <source srcset="assets/projects/autoCare/screen2.webp" type="image/webp">
-                <source srcset="assets/projects/autoCare/screen2.webp" type="image/jpeg">
-                <img src="assets/projects/autoCare/screen2.webp" 
-                     alt="LAP Autocare Screenshot 2" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-              <picture>
-                <source srcset="assets/projects/autoCare/screen3.webp" type="image/webp">
-                <source srcset="assets/projects/autoCare/screen3.webp" type="image/jpeg">
-                <img src="assets/projects/autoCare/screen3.webp" 
-                     alt="LAP Autocare Screenshot 3" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-               <picture>
-                <source srcset="assets/projects/autoCare/screen4.webp" type="image/webp">
-                <source srcset="assets/projects/autoCare/screen4.webp" type="image/jpeg">
-                <img src="assets/projects/autoCare/screen4.webp" 
-                     alt="LAP Autocare Screenshot 1" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-              <picture>
-                <source srcset="assets/projects/autoCare/screen5.webp" type="image/webp">
-                <source srcset="assets/projects/autoCare/screen5.webp" type="image/jpeg">
-                <img src="assets/projects/autoCare/screen5.webp" 
-                     alt="LAP Autocare Screenshot 2" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-          
-            </div>
-          </div>
-        </div>
-        <h3>LAP Autocare Services</h3>
-        <div class="tech-tags">
-          <span class="tech-tag">Flutter</span>
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">PayU</span>
-          <span class="tech-tag">GetX</span>
-        </div>
-        <p>A comprehensive vehicle service platform with real-time tracking, payment integration, and service history management.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.lap.autocare" target="_blank">View on Play Store →</a>
-      </div>
-
-      <!-- LAP SARATHI -->
-      <div class="card">
-      <div class="project-gallery">
-              <img src="assets/projects/sarthi/cover.png" alt="LAP Autocare sarthi" class="project-cover" loading="lazy">
-              <div class="screenshots-container">
-                <div class="screenshots">
-                  <picture>
-                    <source srcset="assets/projects/sarthi/screen1.webp" type="image/webp">
-                    <source srcset="assets/projects/sarthi/screen1.webp" type="image/jpeg">
-                    <img src="assets/projects/sarthi/screen1.webp" 
-                        alt="LAP Autocare Screenshot 1" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-                  <picture>
-                    <source srcset="assets/projects/sarthi/screen2.webp" type="image/webp">
-                    <source srcset="assets/projects/sarthi/screen2.webp" type="image/jpeg">
-                    <img src="assets/projects/sarthi/screen2.webp" 
-                        alt="LAP Autocare Screenshot 2" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-                  <picture>
-                    <source srcset="assets/projects/sarthi/screen3.webp" type="image/webp">
-                    <source srcset="assets/projects/sarthi/screen3.webp" type="image/jpeg">
-                    <img src="assets/projects/sarthi/screen3.webp" 
-                        alt="LAP Autocare Screenshot 3" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-                  <picture>
-                    <source srcset="assets/projects/sarthi/screen4.png" type="image/webp">
-                    <source srcset="assets/projects/sarthi/screen4.png" type="image/jpeg">
-                    <img src="assets/projects/sarthi/screen4.png" 
-                        alt="LAP Autocare Screenshot 1" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-                  <picture>
-                    <source srcset="assets/projects/sarthi/screen5.png" type="image/webp">
-                    <source srcset="assets/projects/sarthi/screen5.png" type="image/jpeg">
-                    <img src="assets/projects/sarthi/screen5.png" 
-                        alt="LAP Autocare Screenshot 2" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-              
-                </div>
-              </div>
-            </div>
-        <h3>LAP SARATHI</h3>
-        <div class="tech-tags">
-          <span class="tech-tag">Flutter</span>
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">PDF</span>
-          <span class="tech-tag">Dynamic Pricing</span>
-        </div>
-        <p>On-demand mechanic service app with dynamic pricing, PDF report generation, and real-time job allocation.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.lapcare.mechanic" target="_blank">View on Play Store →</a>
-      </div>
- 
-      <!-- SSOJS-BLR -->
-      <div class="card">
-<div class="project-gallery">
-          <img src="assets/projects/SSOJS/cover.png" alt="SSOJS" class="project-cover" loading="lazy">
-          <div class="screenshots-container">
-            <div class="screenshots">
-              <picture>
-                <source srcset="assets/projects/SSOJS/screen1.png" type="image/webp">
-                <source srcset="assets/projects/SSOJS/screen1.png" type="image/jpeg">
-                <img src="assets/projects/SSOJS/screen1.png" 
-                     alt="SSOJS Screenshot 1" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-              <picture>
-                <source srcset="assets/projects/SSOJS/screen2.png" type="image/png">
-                <source srcset="assets/projects/SSOJS/screen2.png" type="image/jpeg">
-                <img src="assets/projects/SSOJS/screen2.png" 
-                     alt="SSOJS Screenshot 2" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-              <picture>
-                <source srcset="assets/projects/SSOJS/screen3.png" type="image/png">
-                <source srcset="assets/projects/SSOJS/screen3.png" type="image/jpeg">
-                <img src="assets/projects/SSOJS/screen3.png" 
-                     alt="SSOJS Screenshot 3" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-               <picture>
-                <source srcset="assets/projects/SSOJS/screen4.png" type="image/png">
-                <source srcset="assets/projects/SSOJS/screen4.png" type="image/jpeg">
-                <img src="assets/projects/SSOJS/screen4.png" 
-                     alt="SSOJS Screenshot 4" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-              <picture>
-                <source srcset="assets/projects/SSOJS/screen5.png" type="image/png">
-                <source srcset="assets/projects/SSOJS/screen5.png" type="image/jpeg">
-                <img src="assets/projects/SSOJS/screen5.png" 
-                     alt="SSOJS 5" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-          
-            </div>
-          </div>
-           </div>
-           
-        <h3>SSOJS-BLR</h3>
-        <div class="tech-tags">
-          <span class="tech-tag">Flutter</span>
-          <span class="tech-tag">Community</span>
-          <span class="tech-tag">Event Calendar</span>
-=======
       <div class="section-title" style="margin-top: 4rem;">
         <span class="section-number">06.</span>
         <h2>Certifications & Awards</h2>
@@ -3598,86 +3229,8 @@
             </div>
             <p>Complex high-performance systems</p>
           </div>
->>>>>>> Stashed changes
         </div>
       </div>
-<<<<<<< Updated upstream
-  
-      <!-- BBMart -->
-      <div class="card">
-   <div class="project-gallery">
-          <img src="assets/projects/bbmart/cover.png" alt="bbmart" class="project-cover" loading="lazy">
-          <div class="screenshots-container">
-            <div class="screenshots">
-              <picture>
-                <source srcset="assets/projects/bbmart/screen1.png" type="image/webp">
-                <source srcset="assets/projects/bbmart/screen1.png" type="image/jpeg">
-                <img src="assets/projects/bbmart/screen1.png" 
-                     alt="bbmart Screenshot 1" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-              <picture>
-                <source srcset="assets/projects/bbmart/screen2.png" type="image/png">
-                <source srcset="assets/projects/bbmart/screen2.png" type="image/jpeg">
-                <img src="assets/projects/bbmart/screen2.png" 
-                     alt="bbmart Screenshot 2" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-              <picture>
-                <source srcset="assets/projects/bbmart/screen3.png" type="image/png">
-                <source srcset="assets/projects/bbmart/screen3.png" type="image/jpeg">
-                <img src="assets/projects/bbmart/screen3.png" 
-                     alt="bbmart Screenshot 3" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-               <picture>
-                <source srcset="assets/projects/bbmart/screen4.png" type="image/png">
-                <source srcset="assets/projects/bbmart/screen4.png" type="image/jpeg">
-                <img src="assets/projects/bbmart/screen4.png" 
-                     alt="bbmart Screenshot 4" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-              <picture>
-                <source srcset="assets/projects/bbmart/screen5.png" type="image/png">
-                <source srcset="assets/projects/bbmart/screen5.png" type="image/jpeg">
-                <img src="assets/projects/bbmart/screen5.png" 
-                     alt="bbmart 5" 
-                     class="screenshot-thumb"
-                     loading="lazy"
-                     width="400"
-                     height="800">
-              </picture>
-          
-            </div>
-          </div>
-           </div>
-        <h3>BBMart Pet Store</h3>
-        <div class="tech-tags">
-          <span class="tech-tag">Flutter</span>
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">Next-Day Delivery</span>
-        </div>
-        <p>Specialized pet store app with next-day delivery scheduling, product subscriptions, and veterinary consultation.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.app.veterinary" target="_blank">View on Play Store →</a>
-      </div>
-
-      
-    </div>
-  </section>
-=======
->>>>>>> Stashed changes
 
 
       <!-- High-Ticket Anchor -->
@@ -3993,152 +3546,6 @@
         document.addEventListener('DOMContentLoaded', detectRegion);
       </script>
   </div>
-<<<<<<< Updated upstream
-  
-  <div class="stats">
-   <!-- MandirWiki -->
-    <div class="card">
-        <div class="project-gallery">
-              <img src="assets/projects/mandirWiki/cover.png" alt="MandirWiki" class="project-cover" loading="lazy">
-              <div class="screenshots-container">
-                <div class="screenshots">
-                  <picture>
-                    <source srcset="assets/projects/mandirWiki/screen1.webp" type="image/webp">
-                    <source srcset="assets/projects/mandirWiki/screen1.webp" type="image/jpeg">
-                    <img src="assets/projects/mandirWiki/screen1.webp" 
-                        alt="mandirWiki 1" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-                  <picture>
-                    <source srcset="assets/projects/mandirWiki/screen2.webp" type="image/webp">
-                    <source srcset="assets/projects/mandirWiki/screen2.webp" type="image/jpeg">
-                    <img src="assets/projects/mandirWiki/screen2.webp" 
-                        alt="mandirWiki 2" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-                  <picture>
-                    <source srcset="assets/projects/mandirWiki/screen3.webp" type="image/webp">
-                    <source srcset="assets/projects/mandirWiki/screen3.webp" type="image/jpeg">
-                    <img src="assets/projects/mandirWiki/screen3.webp" 
-                        alt="mandirWiki 3" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-                  <picture>
-                    <source srcset="assets/projects/mandirWiki/screen4.webp" type="image/webp">
-                    <source srcset="assets/projects/mandirWiki/screen4.webp" type="image/jpeg">
-                    <img src="assets/projects/mandirWiki/screen4.webp" 
-                        alt="mandirWiki 4" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-                  <picture>
-                    <source srcset="assets/projects/mandirWiki/screen5.webp" type="image/webp">
-                    <source srcset="assets/projects/mandirWiki/screen5.webp" type="image/jpeg">
-                    <img src="assets/projects/mandirWiki/screen5.webp" 
-                        alt="mandirWiki 5" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-              
-                </div>
-              </div>
-            </div>
-        <h3>MandirWiki</h3>
-      <div class="tech-tags">
-        <span class="tech-tag">Flutter</span>
-        <span class="tech-tag">Firebase</span>
-        <span class="tech-tag">Wiki System</span>
-        <span class="tech-tag">Community</span>
-      </div>
-      <p>A comprehensive knowledge base for Hindu temples with user-contributed content, historical information, and pilgrimage planning tools.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.mandir.wiki&hl=en_IN" target="_blank">View on Play Store →</a>
-    </div>
-
-    <!-- ClassPlx -->
-    <div class="card">
-        <div class="project-gallery">
-              <img src="assets/projects/classPlx/cover.png" alt="classPlx" class="project-cover" loading="lazy">
-              <div class="screenshots-container">
-                <div class="screenshots">
-                  <picture>
-                    <source srcset="assets/projects/classPlx/screen1.webp" type="image/webp">
-                    <source srcset="assets/projects/classPlx/screen1.webp" type="image/jpeg">
-                    <img src="assets/projects/classPlx/screen1.webp" 
-                        alt="classPlx 1" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-                  <picture>
-                    <source srcset="assets/projects/classPlx/screen2.webp" type="image/webp">
-                    <source srcset="assets/projects/classPlx/screen2.webp" type="image/jpeg">
-                    <img src="assets/projects/classPlx/screen2.webp" 
-                        alt="classPlx 2" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-                  <picture>
-                    <source srcset="assets/projects/classPlx/screen3.webp" type="image/webp">
-                    <source srcset="assets/projects/classPlx/screen3.webp" type="image/jpeg">
-                    <img src="assets/projects/classPlx/screen3.webp" 
-                        alt="classPlx 3" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-                  <picture>
-                    <source srcset="assets/projects/classPlx/screen4.webp" type="image/webp">
-                    <source srcset="assets/projects/classPlx/screen4.webp" type="image/jpeg">
-                    <img src="assets/projects/classPlx/screen4.webp" 
-                        alt="classPlx 4" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-                  <picture>
-                    <source srcset="assets/projects/classPlx/screen5.webp" type="image/webp">
-                    <source srcset="assets/projects/classPlx/screen5.webp" type="image/jpeg">
-                    <img src="assets/projects/classPlx/screen5.webp" 
-                        alt="classPlx 5" 
-                        class="screenshot-thumb"
-                        loading="lazy"
-                        width="400"
-                        height="800">
-                  </picture>
-              
-                </div>
-              </div>
-          </div>
-                  <h3>ClassPlx</h3>
-      <div class="tech-tags">
-        <span class="tech-tag">Flutter</span>
-        <span class="tech-tag">Education</span>
-        <span class="tech-tag">Video Streaming</span>
-        <span class="tech-tag">Firebase</span>
-      </div>
-      <p>An educational platform with course management, live classes, and video streaming capabilities for students and teachers.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.classplxplus&hl=en_IN" target="_blank">View on Play Store →</a>
-    </div>
-
-=======
 
   <footer>
     <p>
@@ -4149,432 +3556,12 @@
     </p>
     <p>© 2025 Dev. K. All rights reserved.</p>
   </footer>
->>>>>>> Stashed changes
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
   <script>
 
-<<<<<<< Updated upstream
-      </div>
-    </div>
-    <!-- Number Dekho Partner -->
-    <div class="card">
-        <div class="project-gallery">
-        <img src="assets/projects/partner/cover.png" alt="Number Dekho" class="project-cover" loading="lazy">
-         <!-- Screenshots (using picture tag for responsiveness) -->
-       <div class="screenshots-container">
-        <div class="screenshots">
-      <picture>
-        <source srcset="assets/projects/partner/screen1.webp" type="image/webp">
-        <source srcset="assets/projects/partner/screen1.webp" type="image/jpeg">
-        <img src="assets/projects/partner/screen1.webp" 
-             alt="Home Screen" 
-             class="screenshot-thumb"
-             loading="lazy"
-             width="400"
-             height="800">
-      </picture>
-      
-      <picture>
-        <source srcset="assets/projects/partner/screen2.webp" type="image/webp">
-        <source srcset="assets/projects/partner/screen2.webp" type="image/jpeg">
-        <img src="assets/projects/partner/screen2.webp" 
-             alt="dashboard Selection" 
-             class="screenshot-thumb"
-             loading="lazy"
-             width="400"
-             height="800">
-      </picture>
-         <picture>
-        <source srcset="assets/projects/partner/screen3.webp" type="image/webp">
-        <source srcset="assets/projects/partner/screen3.webp" type="image/jpeg">
-        <img src="assets/projects/partner/screen3.webp" 
-             alt="Service Selection" 
-             class="screenshot-thumb"
-             loading="lazy"
-             width="400"
-             height="800">
-      </picture>
-       <picture>
-        <source srcset="assets/projects/partner/screen4.webp" type="image/webp">
-        <source srcset="assets/projects/partner/screen4.webp" type="image/jpeg">
-        <img src="assets/projects/partner/screen4.webp" 
-             alt="dashboard Selection" 
-             class="screenshot-thumb"
-             loading="lazy"
-             width="400"
-             height="800">
-      </picture>
-         <picture>
-        <source srcset="assets/projects/partner/screen5.webp" type="image/webp">
-        <source srcset="assets/projects/partner/screen5.webp" type="image/jpeg">
-        <img src="assets/projects/partner/screen5.webp" 
-             alt="Service Selection" 
-             class="screenshot-thumb"
-             loading="lazy"
-             width="400"
-             height="800">
-      </picture>
-        </div>
-        </div>
-        </div>
-     <h3>Number Dekho Partner</h3>
-      <div class="tech-tags">
-        <span class="tech-tag">Flutter</span>
-        <span class="tech-tag">Partner App</span>
-        <span class="tech-tag">Admin Dashboard</span>
-        <span class="tech-tag">Firebase</span>
-      </div>
-      <p>Partner application Number Dekho Partner helps skilled workers like electricians, plumbers, AC technicians, beauticians, cleaners, and more connect with real customers nearby — and grow their income fast!</p>
-      <a href="https://play.google.com/store/apps/details?id=com.numberdekho.partner&hl=en_IN" target="_blank">View on Play Store →</a>
-    </div>
-
-    <!-- Agrex.ai -->
-    <div class="card">
- <div class="project-gallery">
-        <img src="assets/projects/agrex/screen1.jpeg" alt="agrex" class="project-cover" loading="lazy">
-         <!-- Screenshots (using picture tag for responsiveness) -->
-       <div class="screenshots-container">
-        <div class="screenshots">
-      <picture>
-        <source srcset="assets/projects/agrex/screen1.jpeg" type="image/webp">
-        <source srcset="assets/projects/agrex/screen1.jpeg" type="image/jpeg">
-        <img src="assets/projects/agrex/screen1.jpeg" 
-             alt="agrex Home Screen" 
-             class="screenshot-thumb"
-             loading="lazy"
-             width="400"
-             height="800">
-      </picture>
-      
-      <picture>
-        <source srcset="assets/projects/agrex/screen2.png" type="image/webp">
-        <source srcset="assets/projects/agrex/screen2.png" type="image/jpeg">
-        <img src="assets/projects/agrex/screen2.png" 
-             alt="agrex dashboard Selection" 
-             class="screenshot-thumb"
-             loading="lazy"
-             width="400"
-             height="800">
-      </picture>
-         <picture>
-        <source srcset="assets/projects/agrex/screen3.png" type="image/webp">
-        <source srcset="assets/projects/agrex/screen3.png" type="image/jpeg">
-        <img src="assets/projects/agrex/screen3.png" 
-             alt="agrex 2" 
-             class="screenshot-thumb"
-             loading="lazy"
-             width="400"
-             height="800">
-      </picture>
-       <picture>
-        <source srcset="assets/projects/agrex/screen4.png" type="image/webp">
-        <source srcset="assets/projects/agrex/screen4.png" type="image/jpeg">
-        <img src="assets/projects/agrex/screen4.png" 
-             alt="dashboard agrex" 
-             class="screenshot-thumb"
-             loading="lazy"
-             width="400"
-             height="800">
-      </picture>
-         <picture>
-        <source srcset="assets/projects/agrex/screen5.png" type="image/webp">
-        <source srcset="assets/projects/agrex/screen5.png" type="image/jpeg">
-        <img src="assets/projects/agrex/screen5.png" 
-             alt="agrex 5" 
-             class="screenshot-thumb"
-             loading="lazy"
-             width="400"
-             height="800">
-      </picture>
-        </div>
-        </div>
-        </div>
-      <h3>Agrex.ai Dashboard</h3>
-      <div class="tech-tags">
-        <span class="tech-tag">Flutter</span>
-        <span class="tech-tag">IoT</span>
-        <span class="tech-tag">Data Visualization</span>
-        <span class="tech-tag">TWA</span>
-      </div>
-      <p>IoT agriculture dashboard with real-time sensor data visualization, predictive analytics, and TWA implementation.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.agrex.dashboard.twa&hl=en_IN" target="_blank">View on Play Store →</a>
-    </div>
-  </div>
-</section>
-
-  <section id="experience">
-    <div class="section-title">
-      <span class="section-number">02.</span>
-      <h2>Professional Experience</h2>
-      <div class="section-divider"></div>
-    </div>
-    
-  <div class="timeline">
-    <!-- New Freelance Section -->
-    <div class="timeline-item">
-      <h3>Freelance Flutter Developer · Self-Employed</h3>
-      <span class="date">April 2024 – Present</span>
-      <p>
-     Developed and delivered scalable Flutter applications for 8+ Indian startups in service-based and e-commerce industries. 
-    Focused on creating robust mobile architectures with Firebase backend integration while optimizing app performance and user experience.
-  </p>
-  <ul>
-    <li>Built 6 production-ready applications with 4.8+ average Play Store ratings</li>
-    <li>Enhanced app performance, reducing load times by 35% through advanced optimization</li>
-    <li>Implemented CI/CD pipelines for 3 client projects, streamlining deployment processes</li>
-  </ul>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Senior Flutter Developer · Mariox Software</h3>
-        <span class="date">April 2023 – April 2024</span>
-        <p>
-          Led migration of 4 legacy native Android apps to Flutter, reducing crash rate from 2.3% to 0.4%. 
-          Implemented CI/CD pipelines reducing release time by 40%. Mentored junior developers in Flutter best practices.
-        </p>
-      </div>
-      <div class="timeline-item">
-        <h3>Flutter Developer · Agrex.ai</h3>
-        <span class="date">August 2021 – April 2023</span>
-        <p>
-          Developed IoT dashboard with real-time data visualization and on-device ML capabilities. 
-          Achieved 4.7★ average rating with optimized performance for low-end devices.
-        </p>
-      </div>
-      <div class="timeline-item">
-        <h3>Android Developer · Pro Innovative Software</h3>
-        <span class="date">June 2020 – August 2021</span>
-        <p>
-          Built 5 modular e-commerce components reducing development time by 30%. 
-          Optimized APK size by 28% through resource optimization and ProGuard rules.
-        </p>
-      </div>
-      <div class="timeline-item">
-        <h3>Python Developer Intern · CSIR-NPL</h3>
-        <span class="date">March 2020 – April 2020</span>
-        <p>
-          Created lab equipment automation scripts reducing manual work by 60%. 
-          Developed data visualization tools for experimental results.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="opensource">
-    <div class="section-title">
-      <span class="section-number">03.</span>
-      <h2>Open-Source Contributions</h2>
-      <div class="section-divider"></div>
-    </div>
-    
-    <div class="opensource-grid">
-      <div class="opensource-card">
-        <h3>
-          flutter_clean_starter
-          <span class="stars"><i class="fas fa-star"></i> 400+</span>
-        </h3>
-        <p>
-          A production-grade Flutter starter template with clean architecture, BLoC state management, 
-          and pre-configured CI/CD workflows. Includes common utilities for faster development.
-        </p>
-        <a href="https://github.com/kunaldev011/flutter_clean_starter" target="_blank" class="repo-link">
-          View Repository →
-        </a>
-      </div>
-      
-      <div class="opensource-card">
-        <h3>
-          firebase_dart_helpers
-          <span class="stars"><i class="fas fa-star"></i> 200+</span>
-        </h3>
-        <p>
-          Collection of utility functions and extensions for Firebase in Dart. Simplifies common 
-          operations like query building, batch writes, and realtime database management.
-        </p>
-        <a href="https://github.com/kunaldev011/firebase_dart_helpers" target="_blank" class="repo-link">
-          View Repository →
-        </a>
-      </div>
-    </div>
-    
-    <div class="section-title" style="margin-top: 4rem;">
-      <span class="section-number">04.</span>
-      <h2>Certifications & Awards</h2>
-      <div class="section-divider"></div>
-    </div>
-    
-    <div class="awards-grid">
-      <div class="award-card">
-        <h3><i class="fas fa-award"></i> Google Associate Android Developer</h3>
-        <span class="date">2022</span>
-        <p>
-          Officially certified by Google in Android development fundamentals, architecture components, 
-          and best practices for building high-quality apps.
-        </p>
-      </div>
-      
-      <div class="award-card">
-        <h3><i class="fas fa-medal"></i> Flutter Favorite Contributor</h3>
-        <span class="date">2023</span>
-        <p>
-          Recognized by the Flutter team for significant contributions to the Flutter ecosystem 
-          through open-source packages and community support.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="section-title">
-      <span class="section-number">05.</span>
-      <h2>Get In Touch</h2>
-      <div class="section-divider"></div>
-    </div>
-    
-    <div class="contact-form">
-      <form id="contactForm" action="https://formspree.io/f/xovlwdrp" method="POST">
-        <div class="form-group">
-          <input type="text" class="form-control" name="name" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-          <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group">
-          <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-  
-<!-- Lightbox HTML -->
-<div id="lightbox" class="lightbox">
-  <span class="close-lightbox">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
-</div>
-
-<!-- [Your existing scripts remain the same] -->
-
-<!-- Add this script for the lightbox functionality -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Lightbox functionality
-    const thumbs = document.querySelectorAll('.screenshot-thumb');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const closeBtn = document.querySelector('.close-lightbox');
-    
-    thumbs.forEach(thumb => {
-      thumb.addEventListener('click', () => {
-        lightboxImg.src = thumb.src;
-        lightboxImg.alt = thumb.alt;
-        lightbox.style.display = 'flex';
-      });
-    });
-    
-    closeBtn.addEventListener('click', () => {
-      lightbox.style.display = 'none';
-    });
-    
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) {
-        lightbox.style.display = 'none';
-      }
-    });
-  });
-</script>
-</div>
-
-<footer>
-  <p>
-    <a href="https://linkedin.com/in/kunal-644129104" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a href="mailto:kunaldev011@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-    <a href="https://github.com/kunaldev011" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-    <a href="https://twitter.com/kunaldev011" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-  </p>
-  <p>© 2025 Kunal . All rights reserved.</p>
-  <p>Built with passion using Three.js, GSAP, and plain CSS.</p>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-<script>
-  
-  // Three.js Animation
-  document.addEventListener('DOMContentLoaded', () => {
-    // Scene setup
-    const canvasContainer = document.getElementById('canvas-container');
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setPixelRatio(window.devicePixelRatio);
-    canvasContainer.appendChild(renderer.domElement);
-
-    // Particles
-    const particlesGeometry = new THREE.BufferGeometry();
-    const particlesCount = 1500;
-    const posArray = new Float32Array(particlesCount * 3);
-
-    for(let i = 0; i < particlesCount * 3; i++) {
-      posArray[i] = (Math.random() - 0.5) * 10;
-    }
-
-    particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-    
-    const particlesMaterial = new THREE.PointsMaterial({
-      size: 0.02,
-      color: 0x00f5ff,
-      transparent: true,
-      opacity: 0.8,
-      blending: THREE.AdditiveBlending
-    });
-
-    const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
-    scene.add(particlesMesh);
-
-    // Animated torus
-    const torusGeometry = new THREE.TorusGeometry(1, 0.4, 16, 60);
-    const torusMaterial = new THREE.MeshBasicMaterial({ 
-      color: 0xff00ff,
-      wireframe: true,
-      transparent: true,
-      opacity: 0.6
-    });
-    const torus = new THREE.Mesh(torusGeometry, torusMaterial);
-    torus.position.z = -5;
-    scene.add(torus);
-
-    // Camera position
-    camera.position.z = 3;
-
-    // Animation loop
-    function animate() {
-      requestAnimationFrame(animate);
-      
-      particlesMesh.rotation.x += 0.0005;
-      particlesMesh.rotation.y += 0.0005;
-      
-      torus.rotation.x += 0.005;
-      torus.rotation.y += 0.005;
-      
-      renderer.render(scene, camera);
-    }
-    animate();
-
-    // Handle resize
-    window.addEventListener('resize', () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-=======
     // Three.js Animation
     document.addEventListener('DOMContentLoaded', () => {
       // Scene setup
@@ -4582,7 +3569,6 @@
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
       const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
->>>>>>> Stashed changes
       renderer.setSize(window.innerWidth, window.innerHeight);
       renderer.setPixelRatio(window.devicePixelRatio);
       canvasContainer.appendChild(renderer.domElement);
@@ -4824,7 +3810,7 @@
       if (billingToggle) {
         billingToggle.addEventListener('change', (e) => {
           const isMonthly = e.target.checked;
-          
+
           if (isMonthly) {
             if (weeklyLabel) weeklyLabel.classList.remove('active');
             if (monthlyLabel) monthlyLabel.classList.add('active');
@@ -4832,7 +3818,7 @@
             if (monthlyLabel) monthlyLabel.classList.remove('active');
             if (weeklyLabel) weeklyLabel.classList.add('active');
           }
-          
+
           // Update prices and text dynamically
           autoSetCurrency();
         });
@@ -4845,7 +3831,7 @@
         const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
         const isIndia = timeZone === 'Asia/Calcutta' || timeZone === 'Asia/Kolkata';
         const isMonthly = document.getElementById('cycleCheckbox')?.checked || false;
-        
+
         // 1. Update standard service packages (No toggle)
         const fixedPrices = document.querySelectorAll('.pkg-price');
         fixedPrices.forEach(el => {
@@ -4989,7 +3975,6 @@
       animate();
     })();
   </script>
-    
 </body>
 
 </html>
